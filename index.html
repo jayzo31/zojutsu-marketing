@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZoJutsu LLC | Creator & Enterprise Software Solutions</title>
+    <meta name="description" content="ZoJutsu LLC builds intelligent software tools for creators and enterprises. Parent company of StudioVid.ai and CiteBrand.com. Princeton, NJ." />
+    <meta name="keywords" content="ZoJutsu, StudioVid, CiteBrand, SaaS, creator tools, video analytics, SEO, AI" />
+    <meta property="og:title" content="ZoJutsu LLC | Creator & Enterprise Software Solutions" />
+    <meta property="og:description" content="ZoJutsu LLC builds intelligent software tools for creators and enterprises. Parent company of StudioVid.ai and CiteBrand.com." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zojutsu.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ZoJutsu LLC | Creator & Enterprise Software" />
+    <meta name="twitter:description" content="Parent company of StudioVid.ai and CiteBrand.com. Building the future of creator tools." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              corporate: {
+                bg: '#09090b',       /* Deep void black */
+                surface: '#18181b',  /* Zinc 900 */
+                card: '#27272a',     /* Zinc 800 */
+                text: '#e4e4e7',     /* Zinc 200 */
+                muted: '#71717a',    /* Zinc 500 */
+                dim: '#3f3f46',      /* Zinc 700 */
+                accent: '#3b82f6',   /* Electric Blue (Modern/Tech) */
+                'accent-hover': '#2563eb', /* Darker Blue */
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            backgroundImage: {
+              'noise': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.1%22/%3E%3C/svg%3E')",
+            },
+            keyframes: {
+              'scan-vertical': {
+                '0%': { transform: 'translateY(-100%)' },
+                '100%': { transform: 'translateY(100%)' }
+              },
+              'shimmer': {
+                '0%': { backgroundPosition: '200% 0' },
+                '100%': { backgroundPosition: '-200% 0' }
+              },
+              'subtle-pulse': {
+                '0%, 100%': { opacity: 1 },
+                '50%': { opacity: 0.8 }
+              },
+              'fade-in': {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 }
+              }
+            },
+            animation: {
+              'scan-vertical': 'scan-vertical 2s linear infinite',
+              'text-shimmer': 'shimmer 6s linear infinite',
+              'subtle-pulse': 'subtle-pulse 4s ease-in-out infinite',
+              'fade-in': 'fade-in 1s ease-out forwards'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #09090b;
+        color: #e4e4e7;
+      }
+      
+      /* Base Technical Patterns */
+      .bg-grid {
+        background-size: 50px 50px;
+        background-image: linear-gradient(to right, rgba(63, 63, 70, 0.1) 1px, transparent 1px),
+                          linear-gradient(to bottom, rgba(63, 63, 70, 0.1) 1px, transparent 1px);
+      }
+
+      /* Corner Bracket utility */
+      .corner-bracket {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-color: #3f3f46;
+        border-style: solid;
+        transition: all 0.3s ease;
+      }
+      .group:hover .corner-bracket {
+        border-color: #3b82f6;
+        width: 12px;
+        height: 12px;
+      }
+      .corner-tl { top: 0; left: 0; border-width: 1px 0 0 1px; }
+      .corner-tr { top: 0; right: 0; border-width: 1px 1px 0 0; }
+      .corner-bl { bottom: 0; left: 0; border-width: 0 0 1px 1px; }
+      .corner-br { bottom: 0; right: 0; border-width: 0 1px 1px 0; }
+
+      /* Holographic Scan */
+      .holographic-card {
+        background: linear-gradient(135deg, rgba(39, 39, 42, 0.4) 0%, rgba(39, 39, 42, 0.1) 100%);
+        backdrop-filter: blur(10px);
+      }
+      
+      /* Premium Text Gradient for Shimmer */
+      .text-gradient-shimmer {
+        background: linear-gradient(90deg, #ffffff 0%, #71717a 45%, #ffffff 50%, #71717a 55%, #ffffff 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+      }
+
+      /* 3D Transform Utilities */
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      .transform-style-3d {
+        transform-style: preserve-3d;
+      }
+      .translate-z-10 {
+        transform: translateZ(10px);
+      }
+      .translate-z-20 {
+        transform: translateZ(20px);
+      }
+      .translate-z-30 {
+        transform: translateZ(30px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
