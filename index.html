@@ -9,7 +9,8 @@
     <meta property="og:title" content="ZoJutsu LLC | Creator & Enterprise Software Solutions" />
     <meta property="og:description" content="ZoJutsu LLC builds intelligent software tools for creators and enterprises. Parent company of StudioVid.ai and CiteBrand.com." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://zojutsu.com" />
+    <meta property="og:url" content="https://zojutsu.com/" />
+    <link rel="canonical" href="https://zojutsu.com/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="ZoJutsu LLC | Creator & Enterprise Software" />
     <meta name="twitter:description" content="Parent company of StudioVid.ai and CiteBrand.com. Building the future of creator tools." />
@@ -146,7 +147,63 @@
 <link rel="stylesheet" href="/index.css">
 </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!--
+        Prerendered copy: this is what crawlers and AI fetchers read without running JS.
+        React's createRoot replaces it on mount. Keep every statement in sync with
+        components/CorporateStatement.tsx, Portfolio.tsx and Contact.tsx; do not add
+        claims that are not already in those components.
+      -->
+      <div class="min-h-screen bg-corporate-bg text-corporate-text">
+        <main class="container mx-auto max-w-4xl px-6 py-24">
+          <header class="border-l-2 border-corporate-accent pl-8 mb-16">
+            <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tighter mb-6 leading-tight">ZoJutsu LLC | Creator &amp; Enterprise Software Solutions</h1>
+            <p class="text-lg md:text-xl text-corporate-muted leading-relaxed mb-4">
+              <strong class="text-white">ZoJutsu LLC</strong> is a software development company headquartered in <strong class="text-white">Princeton, New Jersey</strong>. We build and operate SaaS products for creators and enterprises, including <a href="https://studiovid.ai" class="text-corporate-accent hover:underline">StudioVid.ai</a> (video analytics) and <a href="https://citebrand.com" class="text-corporate-accent hover:underline">CiteBrand.com</a> (SEO &amp; brand monitoring).
+            </p>
+            <p class="text-lg text-corporate-muted leading-relaxed mb-6">
+              ZoJutsu LLC is the parent holding company that owns and operates StudioVid.ai and CiteBrand.com as wholly-owned products. It provides subscription-based SaaS services with monthly and annual billing, and handles subscription billing, customer support and refund requests for both products.
+            </p>
+            <p class="font-mono text-xs text-corporate-dim">Updated <time datetime="2026-09">September 2026</time></p>
+          </header>
+
+          <section id="services" class="mb-16">
+            <h2 class="text-3xl font-bold text-white tracking-tight mb-8 border-b border-corporate-dim pb-4">Products</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+              <article class="bg-corporate-card border-l-2 border-corporate-accent p-8">
+                <h3 class="text-2xl font-bold text-white mb-1 tracking-tight"><a href="https://studiovid.ai">StudioVid.ai</a></h3>
+                <p class="font-mono text-[10px] text-corporate-muted mb-4 tracking-[0.2em] uppercase">Video analytics platform</p>
+                <p class="text-sm text-gray-400 leading-relaxed">AI-powered video analytics for YouTube creators. Track performance metrics, optimize thumbnails, analyze competitors, and grow your channel with data-driven insights.</p>
+              </article>
+              <article class="bg-corporate-card border-l-2 border-corporate-accent p-8">
+                <h3 class="text-2xl font-bold text-white mb-1 tracking-tight"><a href="https://citebrand.com">CiteBrand.com</a></h3>
+                <p class="font-mono text-[10px] text-corporate-muted mb-4 tracking-[0.2em] uppercase">SEO &amp; brand monitoring</p>
+                <p class="text-sm text-gray-400 leading-relaxed mb-4">Monitor your brand's visibility across search engines and AI platforms. Track citations, analyze rankings, and measure your digital footprint in the age of AI search.</p>
+                <p class="text-xs text-corporate-muted leading-relaxed">Why repeated sampling matters: the same prompt returns the same brand list less than 1% of the time across runs (<a href="https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/" class="text-corporate-accent hover:underline">SparkToro</a>), and only about 12% of URLs cited by AI assistants rank in Google's top 10 for the same query (<a href="https://ahrefs.com/blog/ai-search-overlap/" class="text-corporate-accent hover:underline">Ahrefs</a>).</p>
+              </article>
+            </div>
+          </section>
+
+          <section id="corporate" class="mb-16">
+            <h2 class="text-3xl font-bold text-white tracking-tight mb-8 border-b border-corporate-dim pb-4">Billing and statement descriptor</h2>
+            <ul class="space-y-3 text-corporate-muted text-sm">
+              <li>Subscription billing, customer support, and refund requests are handled by ZoJutsu LLC.</li>
+              <li>All payments are processed securely. Credit card charges appear as "ZOJUTSU" or "ZOJUTSU*STUDIOVID" on your statement.</li>
+              <li>Product support tickets are routed through each product's own helpdesk.</li>
+            </ul>
+          </section>
+
+          <section id="contact">
+            <h2 class="text-3xl font-bold text-white tracking-tight mb-8 border-b border-corporate-dim pb-4">Contact</h2>
+            <address class="not-italic text-corporate-muted text-sm space-y-1">
+              <div class="text-white font-bold">ZoJutsu LLC</div>
+              <div>Princeton, New Jersey</div>
+              <div><a href="mailto:contact@zojutsu.com" class="text-corporate-accent hover:underline">contact@zojutsu.com</a></div>
+            </address>
+          </section>
+        </main>
+      </div>
+    </div>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
